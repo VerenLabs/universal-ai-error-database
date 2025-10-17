@@ -18,6 +18,7 @@ Data files live under `data/` and are delivered in 25 entry packets for easier r
 * `data/Universal_AI_Error_Database_v1_part002.csv`  25 entries
 * `data/Universal_AI_Error_Database_v1_part003.csv`  25 entries
 * `data/Universal_AI_Error_Database_v1_part004.csv`  25 entries
+* `data/Universal_AI_Error_Database_v1_part005.csv`  1 free entry
 
 ## Premium Dataset Expansions
 **Universal_AI_Error_Database_v1_part005.csv - Hallucinated Citations (50 Rows, IDs 151-200)**  
