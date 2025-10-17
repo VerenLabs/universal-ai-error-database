@@ -20,7 +20,7 @@ Data files live under `data/` and are delivered in 25 entry packets for easier r
 * `data/Universal_AI_Error_Database_v1_part004.csv`  25 entries
 
 ## Premium Dataset Expansions
-**Hallucinated Citations v1 (50 Rows, IDs 151-200)**  
+**Universal_AI_Error_Database_v1_part005.csv - Hallucinated Citations (50 Rows, IDs 151-200)**  
 50 human-verified LLM citation errors across diverse prompts (tech, history, science). Ideal for fine-tuning LLMs or studying hallucination patterns.  
 - **Price**: $12 (one-time purchase)  
 - **Get It**: [Buy on Gumroad](#) | [Buy on Opendatabay](#) (links coming soon)  
