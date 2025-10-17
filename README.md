@@ -24,7 +24,7 @@ Data files live under `data/` and are delivered in 25 entry packets for easier r
 **Universal_AI_Error_Database_v1_part005.csv - Hallucinated Citations (50 Rows, IDs 151-200)**  
 50 human-verified LLM citation errors across diverse prompts (tech, history, science). Ideal for fine-tuning LLMs or studying hallucination patterns.  
 - **Price**: $12 (one-time purchase)  
-- **Get It**: [Buy on Gumroad](#) | [Buy on Opendatabay](#) (links coming soon)  
+- **Get It**: [Buy on Gumroad](https://verenlabs.gumroad.com/l/kbzubn)) | [Buy on Opendatabay](#) (links coming soon)  
 - **Sample**: See one row below to explore the dataset’s schema and quality. Full pack includes varied prompts, models (GPT-4o, Claude, Mistral, etc.), root causes, and mitigation strategies.
 
 - ### Sample Data (1 Row from Hallucinated Citations Pack)
