@@ -19,11 +19,23 @@ Data files live under `data/` and are delivered in 25 entry packets for easier r
 * `data/Universal_AI_Error_Database_v1_part003.csv`  25 entries
 * `data/Universal_AI_Error_Database_v1_part004.csv`  25 entries
 
-Schema and validation resources live under `schema/`
+## Premium Dataset Expansions
+**Hallucinated Citations v1 (50 Rows, IDs 151-200)**  
+50 human-verified LLM citation errors across diverse prompts (tech, history, science). Ideal for fine-tuning LLMs or studying hallucination patterns.  
+- **Price**: $12 (one-time purchase)  
+- **Get It**: [Buy on Gumroad](#) | [Buy on Opendatabay](#) (links coming soon)  
+- **Sample**: See one row below to explore the dataset’s schema and quality. Full pack includes varied prompts, models (GPT-4o, Claude, Mistral, etc.), root causes, and mitigation strategies.
 
-* `schema/Universal_AI_Error_Schema_v3.json`
+- ### Sample Data (1 Row from Hallucinated Citations Pack)
+- ### Sample Row (Hallucinated Citations v1)
 
-## Schema overview
+| ID  | Date Logged | Category    | Subcategory          | User Prompt Summary                                   | Model Output Summary                                            | Expanded Description                                                                                                                                                                                                 | Root Cause (Technical)             | AI Model Type       | Architecture Scope   | Model Layer Impact | Confidence Score | Confidence Context      | Severity | Source Reference   | Resolution / Fix (Expanded)                                                                                                                                                       | Verification Status | Replicability | Detection Method | Validation Status | Re occurrence Likelihood | Dataset Link            |
+|-----|-------------|-------------|----------------------|------------------------------------------------------|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|--------------------|---------------------|--------------------|-----------------|-----------------------|---------|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|--------------|----------------|-----------------|-------------------------|------------------------|
+| 151 | 2025-10-16  | Attribution | Hallucinated Citation | Cite 3 reliable sources on first iPhone release date. | Appleseed (2023) from Gadget Gossips, issue 6, pp. 89-101 | The model fabricated a citation to 'Appleseed (2023) from Gadget Gossips, issue 6, pp. 89-101' which does not exist in any known database. The prompt requested verifiable sources on first iPhone release date, but the output included a non-existent journal and page reference, misleading the user in a research paper draft. The error occurred mid-generation when the model filled a knowledge gap with plausible-sounding but invented details. This type of hallucination is particularly damaging in academic contexts, as it can propagate false references. | Policy override on source invention | Claude 3.5 Sonnet  | Retrieval Augmented | Reasoning layer    | 0.7             | Cross model uncertainty | Low     | TruthfulQA 2025   | Enhance citation retrieval with real-time web verification APIs to flag non-existent sources. Fine-tune on paired real/fake citation datasets. Implement a post-generation checker cross-referencing against known bibliographies. | False              | High         | User feedback   | Validated        | 0.25                    | BigBench History Subset |
+
+**Unlock the full 50-row dataset for $12 on [Gumroad](#) or [Opendatabay](#).**
+
+## Schema Part001-004 overview
 
 The CSV files follow the v3 schema. All fields are UTF 8, comma separated.
 See the JSON schema for strict validation. Summary below.
